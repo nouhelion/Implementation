@@ -90,6 +90,9 @@
 		<Unit filename="D:/githubs_projects/Phallus/main.c">
 			<Option target="Phallus"/>
 		</Unit>
+		<Unit filename="D:/githubs_projects/Phallus/puppy.h">
+			<Option target="Phallus"/>
+		</Unit>
 		<Unit filename="D:/githubs_projects/Phallus/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

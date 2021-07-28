@@ -7,9 +7,15 @@
 #IncludeRegexTransform: 
 
 D:/githubs_projects/Phallus/avocado.h
+general.h
+D:/githubs_projects/Phallus/general.h
+
+D:/githubs_projects/Phallus/general.h
 stdio.h
 -
 stdarg.h
+-
+stdlib.h
 -
 
 D:/githubs_projects/Phallus/main.c

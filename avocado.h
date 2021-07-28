@@ -20,10 +20,13 @@
 
 //va_end (macro)
 //ends of iteration in the variadic function arguments
+#ifndef PHALLUS_AVOCADO_H
+#define PHALLUS_AVOCADO_H
 
+#endif //PHALLUS_AVOCADO_H
 
-#include <stdio.h>
-#include <stdarg.h>
+#include "general.h"
+
 
 void avocado(char *,...); 				//Our printf function
 char* change(unsigned int, int); 		//change integer number into octal, hex, etc.
