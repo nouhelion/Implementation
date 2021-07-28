@@ -37,7 +37,7 @@ void avocado(char* body,...)
     unsigned int index;
     char *string;
 
-    //Module 1: Initializing Myprintf's arguments
+    //Module 1: Initializing avocado arguments
     va_list arg;
     va_start(arg, body);
 
@@ -81,7 +81,7 @@ void avocado(char* body,...)
         }
     }
 
-    //Module 3: Closing argument list to necessary clean-up
+    //Module 3: Closing argument list
     va_end(arg);
 }
 
