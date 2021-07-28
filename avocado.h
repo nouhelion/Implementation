@@ -4,7 +4,7 @@
 //Type Defined in header file <stdarg.h>
 
 //va_list (type)
-//holds the information needed by macros va_start, va_arg, va_end, and va_copy
+//holds the inbodyion needed by macros va_start, va_arg, va_end, and va_copy
 
 //Macros Defined in header file <stdarg.h>
 
@@ -21,16 +21,15 @@
 //va_end (macro)
 //ends of iteration in the variadic function arguments
 
-#ifndef PHALLUS_AVOCADO_H
-#define PHALLUS_AVOCADO_H
-
-#endif //PHALLUS_AVOCADO_H
 
 #include <stdio.h>
 #include <stdarg.h>
 
-void avocado(char *,...); //my printf implementation
-char* change(unsigned int,int); //changeing ints to some other shitty conversion aka octal / bin / hex ...
+void avocado(char *,...); 				//Our printf function
+char* change(unsigned int, int); 		//change integer number into octal, hex, etc.
+
+
+
 
 void avocado(char* body,...)
 {
@@ -38,85 +37,68 @@ void avocado(char* body,...)
     unsigned int index;
     char *string;
 
-    //initializing arguments
+    //Module 1: Initializing Myprintf's arguments
     va_list arg;
-    va_start(arg,body);
+    va_start(arg, body);
 
-    for(road=body;*road!='\0';road++)
+    for(road = body; *road != '\0'; road++)
     {
-            while (*road!='%')
-            {
-                putchar(*road);
-                road++;
-            }
-
+        while( *road != '%' )
+        {
+            putchar(*road);
             road++;
+        }
 
-            //fetching and executing arguments
+        road++;
 
-            switch(*road)
-            {
-                case 'c':
-                    {
-                    index = va_arg(arg,int); //getting the next char argument
-                    putchar(index);
-                    break;
-                    }
+        //Module 2: Fetching and executing arguments
+        switch(*road)
+        {
+            case 'c' : index = va_arg(arg,int);		//Fetch char argument
+                putchar(index);
+                break;
 
-                case 'd':
+            case 'd' : index = va_arg(arg,int); 		//Fetch Decimal/Integer argument
+                if(index < 0)
                 {
-                    index = va_arg(arg,int); //getting the next decimal/integer argument
-                          if(index<0)
-                          {
-                              index=-index;
-                              putchar('-');
-                          }
-                          puts(change(index,10));
-                    break;
+                    index = -index;
+                    putchar('-');
                 }
+                puts(change(index,10));
+                break;
 
-                case 'o':
-                {
-                    index = va_arg(arg,unsigned int); //getting the next octal representation
-                    puts(change(index,8));
-                    break;
-                }
+            case 'o': index = va_arg(arg,unsigned int); //Fetch Octal representation
+                puts(change(index,8));
+                break;
 
-                case 's':
-                {
-                    string = va_arg(arg,char *); //getting the next string
-                    puts(string);
-                    break;
-                }
+            case 's': string = va_arg(arg,char *); 		//Fetch string
+                puts(string);
+                break;
 
-                case 'x':
-                {
-                    index = va_arg(arg,unsigned int); //getting the next hexadecimal representation
-                    puts(change(index,16));
-                    break;
-                }
-            }
+            case 'x': index = va_arg(arg,unsigned int); //Fetch Hexadecimal representation
+                puts(change(index,16));
+                break;
+        }
     }
-    // closing the argument list
-            va_end(arg);
+
+    //Module 3: Closing argument list to necessary clean-up
+    va_end(arg);
 }
 
-
-char *change(unsigned  int number, int base){
-
-    static char representation[]="0123456789ABCDEF";
+char *change(unsigned int number, int base)
+{
+    static char Representation[]= "0123456789ABCDEF";
     static char buffer[50];
-
     char *pointer;
 
-    pointer=&buffer[49];
-    *pointer='\0';
+    pointer = &buffer[49];
+    *pointer = '\0';
 
     do
     {
-        *--pointer=representation[number%base];
-        number/=base;
-    }while(number!=0);
+        *--pointer = Representation[number%base];
+        number /= base;
+    }while(number != 0);
 
-    return (pointer);
+    return(pointer);
 }

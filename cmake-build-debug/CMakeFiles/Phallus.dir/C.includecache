@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/githubs_projects/Phallus/main.c
+D:/githubs_projects/Phallus/avocado.h
 stdio.h
 -
+stdarg.h
+-
+
+D:/githubs_projects/Phallus/main.c
+avocado.h
+D:/githubs_projects/Phallus/avocado.h
 
