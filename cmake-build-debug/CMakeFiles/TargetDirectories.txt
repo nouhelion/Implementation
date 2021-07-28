@@ -1,0 +1,3 @@
+D:/githubs_projects/Phallus/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/githubs_projects/Phallus/cmake-build-debug/CMakeFiles/Phallus.dir
+D:/githubs_projects/Phallus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
