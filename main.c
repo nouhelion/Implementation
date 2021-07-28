@@ -1,6 +1,9 @@
-#include <stdio.h>
+#include "avocado.h"
 
-int main() {
-    printf("Hello, World!\n");
+
+
+int main(){
+    avocado("my dick is %d inches",9);
     return 0;
 }
+

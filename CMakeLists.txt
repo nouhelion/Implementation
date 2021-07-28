@@ -3,4 +3,4 @@ project(Phallus C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Phallus main.c)
+add_executable(Phallus main.c avocado.h)

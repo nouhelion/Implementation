@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/githubs_projects/Phallus/avocado.h">
+			<Option target="Phallus"/>
+		</Unit>
 		<Unit filename="D:/githubs_projects/Phallus/main.c">
 			<Option target="Phallus"/>
 		</Unit>
