@@ -1,6 +1,7 @@
 //
 // Created by HP Omen on 28/07/2021.
 //
+
 //Type Defined in header file <stdarg.h>
 
 //va_list (type)
@@ -20,6 +21,7 @@
 
 //va_end (macro)
 //ends of iteration in the variadic function arguments
+
 #ifndef PHALLUS_AVOCADO_H
 #define PHALLUS_AVOCADO_H
 
@@ -27,26 +29,28 @@
 
 #include "general.h"
 
-
+//prototypes of the functions
 void avocado(char *,...); 				//Our printf function
 char* change(unsigned int, int); 		//change integer number into octal, hex, etc.
 
 
 
-
-void avocado(char* body,...)
+//definions of the functions
+void avocado(char* body,...)//body represents the body fo the print function called avocado hehe
 {
-    char *road;
+    char *road; //its an index that we gonna use to travel in the string inside the avocado
     unsigned int index;
     char *string;
 
-    //Module 1: Initializing avocado arguments
+    //Etape 1 => Initializing avocado arguments by using standard argument library
+    //we gonna use the variable "arg" to manipulate the arguments list
     va_list arg;
+    //we be using the va_start to see when the arguments start
     va_start(arg, body);
 
-    for(road = body; *road != '\0'; road++)
-    {
-        while( *road != '%' )
+    for(road = body; *road != '\0'; road++)//a string ends with '\0'
+    {   //as long as the character isnt equal to % it means its not argument ,therefore we will print it with putchar
+        while( *road != '%' && *road != '\0')
         {
             putchar(*road);
             road++;
@@ -54,32 +58,38 @@ void avocado(char* body,...)
 
         road++;
 
-        //Module 2: Fetching and executing arguments
+        //Etape 2 => Fetching and executing arguments
         switch(*road)
-        {
-            case 'c' : index = va_arg(arg,int);		//Fetch char argument
-                putchar(index);
+        {   //var_arg will get the next argument and store it in arg as for the thing next to it , it represents the data type
+
+            //%c
+            case 'c' : index = va_arg(arg,int);		                  //Fetch char argument
+                putchar(index); //we gonna print strings with putchar
                 break;
 
-            case 'd' : index = va_arg(arg,int); 		//Fetch Decimal/Integer argument
-                if(index < 0)
+            //%d
+            case 'd' : index = va_arg(arg,int); 		             //Fetch Decimal/Integer argument
+                if(index < 0)//if the integer is negative
                 {
                     index = -index;
-                    putchar('-');
+                    putchar('-');//we gonna print a character '-' before we print it then the number
                 }
-                puts(change(index,10));
+                puts(change(index,10));//converting the decimal number to a char to print it with puts
                 break;
 
-            case 'o': index = va_arg(arg,unsigned int); //Fetch Octal representation
-                puts(change(index,8));
+            //%o
+            case 'o': index = va_arg(arg,unsigned int);             //Fetch Octal representation
+                puts(change(index,8));//converting the octal number to a char to print it with puts
                 break;
 
-            case 's': string = va_arg(arg,char *); 		//Fetch string
+            //%s
+            case 's': string = va_arg(arg,char *); 		           //Fetch string
                 puts(string);
                 break;
 
-            case 'x': index = va_arg(arg,unsigned int); //Fetch Hexadecimal representation
-                puts(change(index,16));
+            //%x
+            case 'x': index = va_arg(arg,unsigned int);           //Fetch Hexadecimal representation
+                puts(change(index,16));//converting the hexadecimal number to a char to print it with puts
                 break;
         }
     }

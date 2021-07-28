@@ -6,3 +6,10 @@
 #define PHALLUS_PUPPY_H
 
 #endif //PHALLUS_PUPPY_H
+
+#include "general.h"
+
+int puppy(char *string,...)
+{
+
+}

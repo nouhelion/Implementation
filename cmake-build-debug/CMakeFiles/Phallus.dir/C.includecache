@@ -17,6 +17,8 @@ stdarg.h
 -
 stdlib.h
 -
+string.h
+-
 
 D:/githubs_projects/Phallus/main.c
 avocado.h
