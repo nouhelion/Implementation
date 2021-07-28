@@ -3,6 +3,7 @@
 
 
 int main(){
-    avocado("my dick size is  %d inches ",9);
+    //testing my cute avocado
+    avocado("my dick size is %d",9);
     return 0;
 }
