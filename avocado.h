@@ -41,7 +41,6 @@ void avocado(char* body,...)//body represents the body fo the print function cal
     char *road; //its an index that we gonna use to travel in the string inside the avocado
     unsigned int index;
     char *string;
-
     //Etape 1 => Initializing avocado arguments by using standard argument library
     //we gonna use the variable "arg" to manipulate the arguments list
     va_list arg;
