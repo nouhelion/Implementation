@@ -13,6 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="49f52a11-a59b-40c7-8ef8-1fc03522cdf8" name="Default Changelist" comment="adding a string after the arguments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avocado.h" beforeDir="false" afterPath="$PROJECT_DIR$/avocado.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Phallus.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Phallus.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Phallus.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Phallus.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Phallus.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Phallus.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Phallus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Phallus.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Phallus.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Phallus.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Phallus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Phallus.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/puppy.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +58,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\githubs_projects\Phallus" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Phallus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Phallus" TARGET_NAME="Phallus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Phallus" RUN_TARGET_NAME="Phallus">
@@ -79,6 +97,8 @@
       <workItem from="1627480366222" duration="10116000" />
       <workItem from="1627497409848" duration="11676000" />
       <workItem from="1627590567780" duration="6000" />
+      <workItem from="1627640809865" duration="1140000" />
+      <workItem from="1627643903294" duration="3243000" />
     </task>
     <task id="LOCAL-00001" summary="maire">
       <created>1627480398741</created>
@@ -143,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627519576271</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="poop">
+      <created>1627641208449</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627641208449</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +194,7 @@
     <MESSAGE value="very big" />
     <MESSAGE value="idk" />
     <MESSAGE value="adding a string after the arguments" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a string after the arguments" />
+    <MESSAGE value="poop" />
+    <option name="LAST_COMMIT_MESSAGE" value="poop" />
   </component>
 </project>
